@@ -17,12 +17,13 @@
 </body>
 <script src="javascript/notifition_top.js"></script>
 <script>
-    setTimeout(function (argument) {
-        var not = new notifitionTop();
+    var not = new notifitionTop();
+    setTimeout(function () {
+        not.show();
     }, 2000);
     var c = 0;
     document.querySelector('button').addEventListener('click', function () {
-        var not = new notifitionTop({t: 3000, msg: 'hihi--' + c});
+        not.show({t: 5000, msg: 'hihi--' + c});
         c++;
     })
 </script>
