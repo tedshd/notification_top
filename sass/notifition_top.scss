@@ -1,0 +1,46 @@
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2014-10-18 10:39:53
+ * @version $Id$
+ */
+
+@import "compass";
+@import "compass/reset";
+@import "compass/CSS3";
+
+$h: 70px;
+$closeW: 25px;
+.vertical-centering:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.notifition-top {
+    position: fixed;
+    top: -$h;
+    left: 0;
+    height: $h;
+    width: 100%;
+    background: #eee;
+    @include transition-property(all);
+    @include transition-duration(.3s);
+    @include transition-timing-function(ease);
+    * {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .notifition-top-msg {
+        text-align: center;
+        width: calc(100% - 25px);
+    }
+    .notifition-top-close {
+        width: $closeW;
+        box-sizing: border-box;
+    }
+}
+.notifition-top-show {
+    top: 0;
+}
