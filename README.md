@@ -6,7 +6,7 @@ slider down notification
 ## Usage
 
 ```javascript
-var not = new notifitionTop();
+var not = new notificationTop();
     not.show();
     // or
     not.show({t: 5000, msg: 'message'});
