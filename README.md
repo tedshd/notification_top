@@ -1,7 +1,7 @@
-notifition_top
+notification_top
 ==============
 
-slider down notifition
+slider down notification
 
 ## Usage
 
