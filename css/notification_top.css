@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 14, ../sass/notifition_top.scss */
+/* line 14, ../sass/notification_top.scss */
 .vertical-centering:before {
   content: '';
   display: inline-block;
@@ -77,8 +77,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 100%;
 }
 
-/* line 21, ../sass/notifition_top.scss */
-.notifition-top {
+/* line 21, ../sass/notification_top.scss */
+.notification-top {
   position: fixed;
   top: -70px;
   left: 0;
@@ -98,23 +98,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 31, ../sass/notifition_top.scss */
-.notifition-top * {
+/* line 31, ../sass/notification_top.scss */
+.notification-top * {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 35, ../sass/notifition_top.scss */
-.notifition-top .notifition-top-msg {
+/* line 35, ../sass/notification_top.scss */
+.notification-top .notification-top-msg {
   text-align: center;
   width: calc(100% - 25px);
 }
-/* line 39, ../sass/notifition_top.scss */
-.notifition-top .notifition-top-close {
+/* line 39, ../sass/notification_top.scss */
+.notification-top .notification-top-close {
   width: 25px;
   box-sizing: border-box;
 }
 
-/* line 44, ../sass/notifition_top.scss */
-.notifition-top-show {
+/* line 44, ../sass/notification_top.scss */
+.notification-top-show {
   top: 0;
 }

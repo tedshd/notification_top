@@ -7,7 +7,7 @@
  */
 
 (function () {
-    function notifitionTop() {
+    function notificationTop() {
         var notifitonHideTimeout;
         function show(option) {
             var d4 = {
@@ -24,10 +24,10 @@
             }
 
             div.setAttribute('id', 'n-' + d);
-            div.setAttribute('class', 'notifition-top vertical-centering');
-            div.innerHTML = '<span class="notifition-top-ico"></span>' +
-                '<span class="notifition-top-msg">' + msg + '</span>' +
-                '<span class="notifition-top-close">' +
+            div.setAttribute('class', 'notification-top vertical-centering');
+            div.innerHTML = '<span class="notification-top-ico"></span>' +
+                '<span class="notification-top-msg">' + msg + '</span>' +
+                '<span class="notification-top-close">' +
                     '<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">' +
                     '<g>' +
                     '<line id="svg_1" y2="18.5" x2="18.5" y1="1.5" x1="1.5" stroke-width="5" stroke="#444" fill="none"/>' +
@@ -37,12 +37,12 @@
                 '</span>';
             document.body.appendChild(div);
             setTimeout(function () {
-                document.querySelector('#n-' + d).classList.add('notifition-top-show');
+                document.querySelector('#n-' + d).classList.add('notification-top-show');
             }, 0);
             notifitonHideTimeout = setTimeout(function () {
                 d4.dom = document.querySelector('#n-' + d);
                 if (d4.dom) {
-                    d4.dom.classList.remove('notifition-top-show');
+                    d4.dom.classList.remove('notification-top-show');
                     d4.dom.addEventListener('transitionend', function () {
                         d4.dom.outerHTML = '';
                         delete d4.dom;
@@ -50,14 +50,14 @@
                 }
             }, t);
 
-            var closeList = document.querySelectorAll('.notifition-top-close'),
+            var closeList = document.querySelectorAll('.notification-top-close'),
                 close = closeList[closeList.length - 1],
-                domList = document.querySelectorAll('.notifition-top');
+                domList = document.querySelectorAll('.notification-top');
 
             close.addEventListener('click', function () {
                 clearTimeout(notifitonHideTimeout);
                 for (var i = domList.length - 1; i >= 0; i--) {
-                    domList[i].classList.remove('notifition-top-show');
+                    domList[i].classList.remove('notification-top-show');
                     domList[i].addEventListener('transitionend', function (e) {
                         e.target.outerHTML = '';
                         delete e.target;
@@ -68,5 +68,5 @@
 
         this.show = show;
     }
-    window.notifitionTop = notifitionTop;
+    window.notificationTop = notificationTop;
 })();

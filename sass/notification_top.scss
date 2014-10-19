@@ -18,7 +18,7 @@ $closeW: 25px;
     height: 100%;
 }
 
-.notifition-top {
+.notification-top {
     position: fixed;
     top: -$h;
     left: 0;
@@ -32,15 +32,15 @@ $closeW: 25px;
         display: inline-block;
         vertical-align: middle;
     }
-    .notifition-top-msg {
+    .notification-top-msg {
         text-align: center;
         width: calc(100% - 25px);
     }
-    .notifition-top-close {
+    .notification-top-close {
         width: $closeW;
         box-sizing: border-box;
     }
 }
-.notifition-top-show {
+.notification-top-show {
     top: 0;
 }
