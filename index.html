@@ -18,6 +18,9 @@
 <script src="javascript/notification_top.js"></script>
 <script>
     var not = new notificationTop();
+    not.show({
+        msg: 'HAHA!'
+    });
     setTimeout(function () {
         not.show();
     }, 2000);

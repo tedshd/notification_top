@@ -19,8 +19,8 @@
                 t = d4.t,
                 msg = d4.msg;
             if (option) {
-                t = option.t;
-                msg = option.msg;
+                t = option.t || d4.t;
+                msg = option.msg || d4.msg;
             }
 
             div.setAttribute('id', 'n-' + d);
