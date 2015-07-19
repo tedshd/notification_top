@@ -11,20 +11,24 @@
         var notifitonHideTimeout;
         function show(option) {
             var d4 = {
+                    color: 'green',
                     t: 3000,
                     msg: 'd4 msg'
                 },
                 d = new Date().getTime(),
                 div = document.createElement('div'),
+                color = d4.color,
                 t = d4.t,
                 msg = d4.msg;
             if (option) {
+                color = option.color || d4.color;
                 t = option.t || d4.t;
                 msg = option.msg || d4.msg;
             }
 
             div.setAttribute('id', 'n-' + d);
             div.setAttribute('class', 'notification-top vertical-centering');
+            div.setAttribute('style', 'background:' + color);
             div.innerHTML = '<span class="notification-top-ico"></span>' +
                 '<span class="notification-top-msg">' + msg + '</span>' +
                 '<span class="notification-top-close">' +
