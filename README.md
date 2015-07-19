@@ -9,5 +9,5 @@ slider down notification
 var not = new notificationTop();
     not.show();
     // or
-    not.show({t: 5000, msg: 'message'});
+    not.show({t: 5000, msg: 'message', color: 'red'});
 ```
